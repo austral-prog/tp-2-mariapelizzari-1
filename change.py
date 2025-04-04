@@ -1,15 +1,14 @@
 def change():
     expense = 23.75
     money = 100
-    gasto = float(input("Ingrese gasto: \n"))
-
-    recibo = float(input("Dinero recibido \n"))
-
-    pesos = recibo-gasto 
-    centavos = (float(pesos)-int(pesos))*100
-
-    print("\nVuelto\n")
-    print("Pesos:\n")
-    print(pesos)
-    print("Centavos:\n")
-    print(centavos)
+	print("Ingresar gasto:")
+	print(expense)
+	print("Dinero recibido")
+	print(money)
+    vuelto = money - expense
+    pesos = int(vuelto)
+    centavos = int(round((vuelto-pesos)*100))
+	print("\nVuelto\n")
+	print(f"Pesos:\n{pesos}")
+	print(f"Centavos:\n{centavos}")
+	
